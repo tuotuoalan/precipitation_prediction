@@ -36,7 +36,7 @@ def NC_info(filepath):
     print(nf.variables)
     nf.close()
 
-#处理数据，将降水数据得单位m/hour转换为mm/day
+#处理数据，将降水数据得单位m转换为mm/day
 def ERA5_process_total_precipitation(file_path):  #这是原本采用的数据单位为m的时候的转换
     nc_trdata = Dataset(file_path, 'r+')
     # 数据*1000 ————>mm/day
